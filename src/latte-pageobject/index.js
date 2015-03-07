@@ -2,7 +2,6 @@
 
 var _ = require('lodash');
 var blender = require('../blending-machine');
-var recipe = require('../recipe');
 var waiter = require('../waiter');
 
 var lattePageObject = {
@@ -14,7 +13,7 @@ var lattePageObject = {
      * @param pageObjectsToMix (Optional) A page object or an array of page objects to mix with the built page object
      */
     makeIt: function (apiIngredients, pageObjectsToMix) {
-        recipe.checkIngredients(apiIngredients);
+        waiter.checkIngredients(apiIngredients);
         var fluidAPI = blender.fluidify(apiIngredients);
         blender.mix(apiIngredients, fluidAPI, pageObjectsToMix);
         return waiter.serve(apiIngredients, fluidAPI);
