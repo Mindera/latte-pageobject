@@ -73,6 +73,7 @@ return = {
         return something;
      }
 }
+latte.makeIt(api, [parentPageObject, anotherParentPageObject]);
 ```
 
 ## Tests
