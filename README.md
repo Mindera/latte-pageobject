@@ -31,7 +31,7 @@ pageObject.on.childPageObject
 To achieve such API, one can have the following API mold:
 
 ```javascript
-return = {
+var api = {
      // The standard ingredients of the Latte PageObject
      on: {
          grandChildPageObject: grandChildPageObject
