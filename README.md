@@ -1,3 +1,5 @@
+#  [![NPM version][npm-image]][npm-url]
+
 Latte Page Object
 =========
 
@@ -85,3 +87,6 @@ Add unit tests for any new or changed functionality. Lint and test your code.
 ## Release History
 
 * 1.0.0 Initial release
+
+[npm-url]: https://npmjs.org/package/latte-pageobject
+[npm-image]: https://badge.fury.io/js/latte-pageobject.svg
