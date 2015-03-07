@@ -15,14 +15,14 @@ Your test could be implemented like the following example:
 ```javascript
 pageObject.on.childPageObject
      .and.on.grandChildPageObject
-     .given.somePrecondition
-     .and.otherPrecondition
+     .given.somePrecondition()
+     .and.otherPrecondition()
      .(*)
-     .when.userDoesSomething
-     .and.doesSomethingElse
+     .when.userDoesSomething()
+     .and.doesSomethingElse()
      .(*)
-     .then.itShouldHaveHappenedAThing
-     .and.itShouldHaveHappenedAnotherThing
+     .then.itShouldHaveHappenedAThing()
+     .and.itShouldHaveHappenedAnotherThing()
      .(*)
 ```
 
