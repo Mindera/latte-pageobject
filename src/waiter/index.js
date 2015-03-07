@@ -44,6 +44,13 @@ function getCrunchyParts(apiIngredients) {
 }
 
 var waiter = {
+    /**
+     * Serves the final Latte Page Object.
+     *
+     * @param apiIngredients The API ingredients
+     * @param fluidAPI The fluid API
+     * @returns {Object} A delicious Latte Page Object ready to consume
+     */
     serve: function (apiIngredients, fluidAPI) {
         var crunchyParts = getCrunchyParts(apiIngredients);
         var latte = serveInLatteCup(fluidAPI);
