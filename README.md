@@ -15,14 +15,14 @@ Your test could be implemented like the following example:
 ```javascript
 pageObject.on.childPageObject
      .and.on.grandChildPageObject
-     .given.somePrecondition
-     .and.otherPrecondition
+     .given.somePrecondition()
+     .and.otherPrecondition()
      .(*)
-     .when.userDoesSomething
-     .and.doesSomethingElse
+     .when.userDoesSomething()
+     .and.doesSomethingElse()
      .(*)
-     .then.itShouldHaveHappenedAThing
-     .and.itShouldHaveHappenedAnotherThing
+     .then.itShouldHaveHappenedAThing()
+     .and.itShouldHaveHappenedAnotherThing()
      .(*)
 ```
 
@@ -65,8 +65,7 @@ return = {
          }
      },
      
-     // The `crunchy` parts of the API, where you can add getters, or any other flavour to your Latte. But like any
-     // other hot, creamy drink, you should be moderate adding this sprinkles to your drink
+     // The `crunchy` parts of the API, where you can add getters, or any other flavour to your Latte. But like any other hot, creamy drink, you should be moderate adding this sprinkles to your drink
      
      getSomeMeaningValueFromMyPageObject: function () {
         return something;
