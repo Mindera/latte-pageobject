@@ -1,7 +1,7 @@
 {
-  "name": "fluent-pageobject",
+  "name": "latte-pageobject",
   "version": "1.0.0",
-  "description": "An abstract factory for creating page objects with a fluent BDD-like API. This module was created with browser automation in mind.",
+  "description": "Create your page objects with a fluid, creamy and delicious BDD-like API for browser automation.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
