@@ -1,5 +1,5 @@
 'use strict';
 
-var fluentPageObject = require('src/fluent-pageobject');
-module.exports = fluentPageObject;
+var lattePageObject = require('src/latte-pageobject');
+module.exports = lattePageObject;
 
