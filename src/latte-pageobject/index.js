@@ -4,7 +4,7 @@ var _ = require('lodash');
 var blender = require('../blending-machine');
 var recipe = require('../recipe');
 
-var fluentPageObject = {
+var lattePageObject = {
     /**
      * Builds a page object with a Fluent BDD-like API. The API can be infinitely chainable. To achieve an infinite
      * chain, each function inside each block must return 'this'.
@@ -18,4 +18,4 @@ var fluentPageObject = {
         return blender.mix(api, fluidAPI, pageObjectsToMix);
     }
 };
-module.exports = fluentPageObject;
+module.exports = lattePageObject;
