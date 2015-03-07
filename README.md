@@ -1,3 +1,5 @@
+#  [![NPM version][npm-image]][npm-url]
+
 Latte Page Object
 =========
 
