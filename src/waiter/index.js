@@ -64,19 +64,19 @@ var waiter = {
      */
     checkIngredients: function(apiIngredients) {
         if (_.isUndefined(apiIngredients)) {
-            throw new Error('No api object was defined');
+            throw new Error('No api ingredients were found');
         }
         if (_.isUndefined(apiIngredients.on)) {
-            throw new Error('On block was not defined');
+            throw new Error('On ingredient was not found');
         }
         if (_.isUndefined(apiIngredients.given)) {
-            throw new Error('Given block was not defined');
+            throw new Error('Given ingredient was not defined');
         }
         if (_.isUndefined(apiIngredients.when)) {
-            throw new Error('When block was not defined');
+            throw new Error('When ingredient was not defined');
         }
         if (_.isUndefined(apiIngredients.then)) {
-            throw new Error('Then block was not defined');
+            throw new Error('Then ingredient was not defined');
         }
     }
 };
