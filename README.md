@@ -1,7 +1,7 @@
 Latte Page Object
 =========
 
-A small library for creating your page objects with a fluid, creamy and delicious BDD-like API with the ability to
+A small library to allow creating your page objects with a fluid, creamy and delicious BDD-like API with the ability to
 add `crunchy` properties that adds special personal flavour to your page objects for browser automation tests.
 
 ## Installation
@@ -26,10 +26,10 @@ pageObject.on.childPageObject
      .(*)
 ```
 
-To achieve such API, one can have the following defined API ingredients:
+To achieve such API, one can have the following API mold:
 
 ```javascript
-var api = {
+return = {
      // The standard ingredients of the Latte PageObject
      on: {
          grandChildPageObject: grandChildPageObject
@@ -65,13 +65,12 @@ var api = {
          }
      },
      
-     // The `crunchy` parts of the API, where you can add getters, utility functions, or any other flavour to your        // Latte. But like any other hot, creamy drink, you should be moderate with the sprinkles.
+     // The `crunchy` parts of the API, where you can add getters, or any other flavour to your Latte. But like any other hot, creamy drink, you should be moderate adding this sprinkles to your drink
      
      getSomeMeaningValueFromMyPageObject: function () {
         return something;
      }
 }
-return latte.makeIt(api, [parentPageObject, otherPageObject]);
 ```
 
 ## Tests
