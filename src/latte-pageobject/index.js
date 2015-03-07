@@ -6,16 +6,16 @@ var recipe = require('../recipe');
 
 var lattePageObject = {
     /**
-     * Builds a page object with a Fluent BDD-like API. The API can be infinitely chainable. To achieve an infinite
-     * chain, each function inside each block must return 'this'.
+     * Makes a page object with a Fluid BDD-like API. The API can be infinitely chainable. To achieve an such
+     * chain, each function inside each ingredient must return 'this'.
      *
-     * @param api An API object structure used to build the page object
+     * @param apiIngredients An API object ingredients used to make a Latte page object
      * @param pageObjectsToMix (Optional) A page object or an array of page objects to mix with the built page object
      */
-    makeIt: function (api, pageObjectsToMix) {
-        recipe.checkIngredients(api);
-        var fluidAPI = blender.fluidify(api);
-        return blender.mix(api, fluidAPI, pageObjectsToMix);
+    makeIt: function (apiIngredients, pageObjectsToMix) {
+        recipe.checkIngredients(apiIngredients);
+        var fluidAPI = blender.fluidify(apiIngredients);
+        return blender.mix(apiIngredients, fluidAPI, pageObjectsToMix);
     }
 };
 module.exports = lattePageObject;
