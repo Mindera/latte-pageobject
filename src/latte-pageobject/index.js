@@ -3,6 +3,7 @@
 var _ = require('lodash');
 var blender = require('../blending-machine');
 var recipe = require('../recipe');
+var waiter = require('../waiter');
 
 var lattePageObject = {
     /**
@@ -15,7 +16,8 @@ var lattePageObject = {
     makeIt: function (apiIngredients, pageObjectsToMix) {
         recipe.checkIngredients(apiIngredients);
         var fluidAPI = blender.fluidify(apiIngredients);
-        return blender.mix(apiIngredients, fluidAPI, pageObjectsToMix);
+        blender.mix(apiIngredients, fluidAPI, pageObjectsToMix);
+        return waiter.serve(apiIngredients, fluidAPI);
     }
 };
 module.exports = lattePageObject;
