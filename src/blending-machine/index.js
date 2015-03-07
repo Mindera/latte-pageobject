@@ -1,7 +1,6 @@
 'use strict';
 
 var _ = require('lodash');
-var recipe = require('../recipe');
 
 /**
  * Mixes the source object's fluid API with the destination's.
@@ -10,10 +9,6 @@ var recipe = require('../recipe');
  * @param source The source fluid API
  */
 function mixFluidAPI(destination, source) {
-
-    recipe.checkIngredients(destination);
-    recipe.checkIngredients(source);
-
     _.merge(destination.and, source.and, mergeCustomizer);
     _.merge(destination.on, source.on, mergeCustomizer);
     _.merge(destination.given, source.given, mergeCustomizer);
