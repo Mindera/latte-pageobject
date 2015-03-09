@@ -1,6 +1,6 @@
 {
   "name": "latte-pageobject",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Create your page objects with a fluid, creamy and delicious BDD-like API for browser automation.",
   "main": "index.js",
   "scripts": {
