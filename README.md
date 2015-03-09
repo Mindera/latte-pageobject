@@ -87,6 +87,7 @@ Add unit tests for any new or changed functionality. Lint and test your code.
 
 ## Release History
 
+* 1.0.2 Fixing main module relative path
 * 1.0.1 Bug fixing
 * 1.0.0 Initial release
 
