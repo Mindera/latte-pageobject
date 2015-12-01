@@ -82,7 +82,7 @@ var blendingMachine = {
         };
 
         fluidAPI.on.and = fluidAPI;
-        fluidAPI.given.and = fluidAPI;
+        fluidAPI.given.and = fluidAPI.given;
         fluidAPI.then.and = fluidAPI.then;
         fluidAPI.when.then = fluidAPI.then;
         fluidAPI.when.and = fluidAPI.when;
