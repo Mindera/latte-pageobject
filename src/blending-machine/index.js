@@ -3,6 +3,15 @@
 var _ = require('lodash');
 
 /**
+ * Lodash merge customizer to allow child functions to override parent function when mixing page objects together.
+ */
+function mergeCustomizer(objectValue) {
+    if (objectValue !== undefined && typeof objectValue === 'function') {
+        return objectValue;
+    }
+}
+
+/**
  * Mixes the source object's fluid API with the destination's.
  *
  * @param destination The destination fluid API
@@ -26,24 +35,15 @@ function mixCrunchyParts(destination, source) {
     _.merge(destination, source, Object.getPrototypeOf(source), mergeCustomizer);
 }
 
-function blendAPIs(crunchyApi, fluidApi, sourcesArray) {
-    var i;
-    for (i = 0; i < sourcesArray.length; i++) {
-        blendAPI(crunchyApi, fluidApi, sourcesArray[i]);
-    }
-}
-
 function blendAPI(crunchyApi, fluidApi, source) {
     mixFluidAPI(fluidApi, source);
     mixCrunchyParts(crunchyApi, source);
 }
 
-/**
- * Lodash merge customizer to allow child functions to override parent function when mixing page objects together.
- */
-function mergeCustomizer(objectValue) {
-    if (objectValue !== undefined && typeof objectValue === 'function') {
-        return objectValue;
+function blendAPIs(crunchyApi, fluidApi, sourcesArray) {
+    var i;
+    for (i = 0; i < sourcesArray.length; i++) {
+        blendAPI(crunchyApi, fluidApi, sourcesArray[i]);
     }
 }
 
