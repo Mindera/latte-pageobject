@@ -1,6 +1,5 @@
 'use strict';
 
-var _ = require('lodash');
 var blender = require('../blending-machine');
 var waiter = require('../waiter');
 
