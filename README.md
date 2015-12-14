@@ -8,7 +8,7 @@ add `crunchy` properties that adds special personal flavour to your page objects
 
 ## Installation
 
-  npm install latte-pageobject --save
+  `npm install latte-pageobject --save`
 
 ## Usage
 
@@ -66,9 +66,9 @@ var api = {
              return this;
          }
      },
-     
+
      // The `crunchy` parts of the API, where you can add getters, or any other flavour to your Latte. But like any other hot, creamy drink, you should be moderate adding this sprinkles to your drink
-     
+
      getSomeMeaningValueFromMyPageObject: function () {
         return something;
      }
@@ -78,7 +78,7 @@ latte.makeIt(api, [parentPageObject, anotherParentPageObject]);
 
 ## Tests
 
-  npm test
+  `npm test`
 
 ## Contributing
 
