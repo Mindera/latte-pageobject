@@ -1,5 +1,7 @@
 #  [![NPM version][npm-image]][npm-url]
 
+**This project is no longer mantained** 
+
 Latte Page Object
 =========
 
